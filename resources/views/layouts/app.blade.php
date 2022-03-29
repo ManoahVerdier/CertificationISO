@@ -26,9 +26,9 @@
         @yield('captcha')
 
         
-        @if(env('ANALYTICS') ?? false)
+        {{--@if(env('ANALYTICS') ?? false)
             {!!env('ANALYTICS')!!}
-        @endif
+        @endif--}}
 
         
         @yield('extra-css')
@@ -36,8 +36,8 @@
 
     <body @yield('body-attr')>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV9DF45"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV9DF45"-->
+        <!--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
         <!-- End Google Tag Manager (noscript) -->
 
 
