@@ -1,8 +1,11 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteCond %{HTTPS} off
-    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 	
+RewriteEngine On
+RewriteCond %{HTTP_HOST} www.certificationiso.fr
+RewriteRule (.*) http://certificationiso.fr/$1 [R=301,L]
 
 RedirectPermanent /formation-iso-9001-v2/ https://certificationiso.fr/f/formation-iso-9001 
 RedirectPermanent /audit-iso-45001/ https://certificationiso.fr/audit-interne-qualite-externalise
@@ -11,20 +14,20 @@ RedirectPermanent /prix-certification-iso-45001/ https://certificationiso.fr/cs/
 RedirectPermanent /accompagnement-iso-17025/ https://certificationiso.fr/cs/conseil-iso-17025
 RedirectPermanent /conseil-iso-17020/ https://certificationiso.fr/cs/conseil-iso-17020
 RedirectPermanent /certification-iso-9100/ https://certificationiso.fr/cs/conseil-en-9100
-RedirectPermanent /formations/formation-norme-iso-17025/ https://certificationiso.fr/
+RedirectPermanent /formations/formation-norme-iso-17025/ https://certificationiso.fr
 RedirectPermanent /audit-mase/ https://certificationiso.fr/cs/mase
 RedirectPermanent /conseil-mase/ https://certificationiso.fr/cs/mase
-RedirectPermanent /comment-devenir-consultant-qualite/ https://certificationiso.fr/
+RedirectPermanent /comment-devenir-consultant-qualite/ https://certificationiso.fr
 RedirectPermanent /formation-pilote-processus/ https://certificationiso.fr/f/formation-pilote-processus
 RedirectPermanent /test-actu-2/ https://certificationiso.fr
 RedirectPermanent /certification-iso-17025 https://certificationiso.fr/cs/conseil-iso-17025
 RedirectPermanent /certification-iso-17025/ https://certificationiso.fr/cs/conseil-iso-17025
-RedirectPermanent /formation-assistant-qualite/ https://certificationiso.fr/
+RedirectPermanent /formation-assistant-qualite/ https://certificationiso.fr
 RedirectPermanent /certification-mase/ https://certificationiso.fr/cs/mase
 RedirectPermanent /formations/formation-nouvelle-norme-iso-9001-version-2015-2/ https://certificationiso.fr/f/formation-iso-9001 
 RedirectPermanent /certification-iso-45001/ https://certificationiso.fr/cs/conseil-iso-45001
 RedirectPermanent /certification-iso-45001 https://certificationiso.fr/cs/conseil-iso-45001
-RedirectPermanent /formation-responsable-metrologie/ https://certificationiso.fr/
+RedirectPermanent /formation-responsable-metrologie/ https://certificationiso.fr
 
 RedirectPermanent /formation-mase/ https://certificationiso.fr/cs/mase
 RedirectPermanent /certification-iso-9001-2015/ https://certificationiso.fr/cs/conseil-iso-9001
@@ -37,16 +40,16 @@ RedirectPermanent /prix-certification-iso-45001 https://certificationiso.fr/cs/c
 RedirectPermanent /accompagnement-iso-17025 https://certificationiso.fr/cs/conseil-iso-17025
 RedirectPermanent /conseil-iso-17020 https://certificationiso.fr/cs/conseil-iso-17020
 RedirectPermanent /certification-iso-9100 https://certificationiso.fr/cs/conseil-en-9100
-RedirectPermanent /formationsformation-norme-iso-17025/ https://certificationiso.fr/
+RedirectPermanent /formationsformation-norme-iso-17025/ https://certificationiso.fr
 RedirectPermanent /audit-mase https://certificationiso.fr/cs/mase
 RedirectPermanent /conseil-mase https://certificationiso.fr/cs/mase
-RedirectPermanent /comment-devenir-consultant-qualite https://certificationiso.fr/
+RedirectPermanent /comment-devenir-consultant-qualite https://certificationiso.fr
 RedirectPermanent /formation-pilote-processus https://certificationiso.fr/f/formation-pilote-processus
 RedirectPermanent /test-actu-2 https://certificationiso.fr
-RedirectPermanent /formation-assistant-qualite https://certificationiso.fr/
+RedirectPermanent /formation-assistant-qualite https://certificationiso.fr
 RedirectPermanent /certification-mase https://certificationiso.fr/cs/mase
 RedirectPermanent /formations/formation-nouvelle-norme-iso-9001-version-2015-2 https://certificationiso.fr/f/formation-iso-9001 
-RedirectPermanent /formation-responsable-metrologie https://certificationiso.fr/
+RedirectPermanent /formation-responsable-metrologie https://certificationiso.fr
 
 RedirectPermanent /formation-mase https://certificationiso.fr/cs/mase
 RedirectPermanent /certification-iso-9001-2015 https://certificationiso.fr/cs/conseil-iso-9001
@@ -55,40 +58,55 @@ RedirectPermanent /conseil-iso-9001 https://certificationiso.fr/cs/conseil-iso-9
 RedirectPermanent /formations/formation-norme-en-9100/ https://certificationiso.fr/f/formation-en-9100
 RedirectPermanent /accompagnement-iso-9001/ https://certificationiso.fr/cs/conseil-iso-9001
 RedirectPermanent /accompagnement-iso-9001-2/ https://certificationiso.fr/cs/conseil-iso-9001
-RedirectPermanent /formations/formation-norme-iso-22000/ https://certificationiso.fr/
+RedirectPermanent /formations/formation-norme-iso-22000/ https://certificationiso.fr
 RedirectPermanent /transition-iso-17025-2/ https://certificationiso.fr/f/formation-iso-17025
-RedirectPermanent /hello-world/ https://certificationiso.fr/
+RedirectPermanent /hello-world/ https://certificationiso.fr
 RedirectPermanent /formation-iso-9001/ https://certificationiso.fr/f/formation-iso-9001
 RedirectPermanent /formations/formation-mase/ https://certificationiso.fr/f/formation-mase
 RedirectPermanent /formations/formation-mase https://certificationiso.fr/f/formation-mase
 RedirectPermanent /prix-certification-iso-mase/ https://certificationiso.fr/f/formation-mase
 RedirectPermanent /formation-auditeur-qualite/ https://certificationiso.fr/f/formation-auditeur-qualite
-RedirectPermanent /certification-iso-22000/ https://certificationiso.fr/
+RedirectPermanent /certification-iso-22000/ https://certificationiso.fr
 
-RedirectPermanent /comment-devenir-consultant-qualite/feed/ https://certificationiso.fr/
-RedirectPermanent /category/seo/feed/ https://certificationiso.fr/
+RedirectPermanent /comment-devenir-consultant-qualite/feed/ https://certificationiso.fr
+RedirectPermanent /category/seo/feed/ https://certificationiso.fr
 
 RedirectPermanent /formations/formation-norme-en-9100 https://certificationiso.fr/f/formation-en-9100
 RedirectPermanent /accompagnement-iso-9001 https://certificationiso.fr/cs/conseil-iso-9001
 RedirectPermanent /accompagnement-iso-9001-2 https://certificationiso.fr/cs/conseil-iso-9001
 RedirectPermanent /formations/formation-norme-iso-22000 https://certificationiso.fr/
 RedirectPermanent /transition-iso-17025-2 https://certificationiso.fr/f/formation-iso-17025
-RedirectPermanent /hello-world https://certificationiso.fr/
+RedirectPermanent /hello-world https://certificationiso.fr
 RedirectPermanent /formation-iso-9001 https://certificationiso.fr/f/formation-iso-9001
 RedirectPermanent /prix-certification-iso-mase https://certificationiso.fr/f/formation-mase
 RedirectPermanent /formation-auditeur-qualite https://certificationiso.fr/f/formation-auditeur-qualite
-RedirectPermanent /certification-iso-22000 https://certificationiso.fr/
-RedirectPermanent /formations https://certificationiso.fr/
-RedirectPermanent /comment-devenir-consultant-qualite/feed https://certificationiso.fr/
-RedirectPermanent /category/seo/feed https://certificationiso.fr/
+RedirectPermanent /certification-iso-22000 https://certificationiso.fr
+RedirectPermanent /formations https://certificationiso.fr
+RedirectPermanent /comment-devenir-consultant-qualite/feed https://certificationiso.fr
+RedirectPermanent /category/seo/feed https://certificationiso.fr
 RedirectPermanent /formations/ https://certificationiso.fr
-RedirectPermanent /formations https://certificationiso.fr/
-RedirectPermanent /conseil/ https://certificationiso.fr/
-RedirectPermanent /conseil https://certificationiso.fr/
-RedirectPermanent /testdates/ https://certificationiso.fr/
-RedirectPermanent /testdates https://certificationiso.fr/
+RedirectPermanent /formations https://certificationiso.fr
+RedirectPermanent /conseil/ https://certificationiso.fr
+RedirectPermanent /conseil https://certificationiso.fr
+RedirectPermanent /testdates/ https://certificationiso.fr
+RedirectPermanent /testdates https://certificationiso.fr
+RedirectPermanent /mase/ https://certificationiso.fr/cs/mase
+RedirectPermanent /mase https://certificationiso.fr/cs/mase
+RedirectPermanent /conseil-iso-17025/ https://certificationiso.fr/cs/conseil-iso-17025
+RedirectPermanent /conseil-iso-17025 https://certificationiso.fr/cs/conseil-iso-17025
+RedirectPermanent /conseil-iso-14001/ https://certificationiso.fr/cs/conseil-iso-14001
+RedirectPermanent /conseil-iso-14001 https://certificationiso.fr/cs/conseil-iso-14001
+RedirectPermanent /conseil-en-9100/ https://certificationiso.fr/cs/conseil-en-9100
+RedirectPermanent /conseil-en-9100 https://certificationiso.fr/cs/conseil-en-9100
+RedirectPermanent /public/notre-politique-de-confidentialite https://certificationiso.fr/p/confidentialite
 
-
+RedirectPermanent /p/consultant-iso-9001 https://certificationiso.fr
+RedirectPermanent /p/PDCA-Plan-Do-Check-Act-méthode-cycle-roue-Deming https://certificationiso.fr
+RedirectPermanent /Responsable-Qualite-ISO-9001-Externalise https://certificationiso.fr
+RedirectPermanent /p/Consultant-ISO-9001-Lyon https://certificationiso.fr
+RedirectPermanent /p/obtention-certification-ISO-9001 https://certificationiso.fr
+RedirectPermanent /p/confidentialite https://certificationiso.fr
+RedirectPermanent /documentation https://certificationiso.fr
 
     RewriteCond %{REQUEST_URI} !^public
     RewriteRule ^(.*)$ public/$1 [L]

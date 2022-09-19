@@ -1,14 +1,14 @@
 <?php
 $title="Formation";
 $details = array (
-"Aix-en-Provence" => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Le Havre"        => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Lyon"            => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Marseille"       => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Montpellier"     => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Nice"            => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Paris"           => array ("24/08/20","25/09/20","30/10/20","27/11/20"),
-"Toulouse"        => array ("24/08/20","25/09/20","30/10/20","27/11/20"));
+"Aix-en-Provence" => array ("03/02/22","28/03/22","25/04/22"),
+"Le Havre"        => array ("03/02/22","28/03/22","25/04/22"),
+"Lyon"            => array ("03/02/22","28/03/22","25/04/22"),
+"Marseille"       => array ("03/02/22","28/03/22","25/04/22"),
+"Montpellier"     => array ("03/02/22","28/03/22","25/04/22"),
+"Nice"            => array ("03/02/22","28/03/22","25/04/22"),
+"Paris"           => array ("03/02/22","28/03/22","25/04/22"),
+"Toulouse"        => array ("03/02/22","28/03/22","25/04/22"));
 ?>
 <div class="row d-none d-md-block muli" id="calendrier">
     <div class="col-12 text-center">
@@ -19,10 +19,9 @@ $details = array (
             <thead>
                 <tr class="hidden-phone">
                     <th class="bold">Lieux</th>
-                    <th>Aout</th>
-                    <th>Septembre</th>
-                    <th>Octobre</th>
-                    <th>Novembre</th>
+                    <th>Fevrier</th>
+                    <th>Mars</th>
+					<th>Avril</th>
                 </tr>
             </thead>
             <tbody>
