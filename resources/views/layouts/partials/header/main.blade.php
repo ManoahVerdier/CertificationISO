@@ -110,9 +110,6 @@
                                                     <a class="dropdown-item pl-3" href="{{route('partenaires')}}">Nos partenaires</a>
                                                 </div>
                                                 <div class="col-12 text-left pl-0">
-                                                    <a class="dropdown-item pl-3" href="{{route('demarche_qualite')}}">Démarche qualité</a>
-                                                </div>
-                                                <div class="col-12 text-left pl-0">
                                                     <a class="dropdown-item pl-3" href="{{route('contact_recrutement')}}">Recrutement</a>
                                                 </div>
                                                 <div class="col-12 text-left pl-0">
