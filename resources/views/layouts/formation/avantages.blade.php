@@ -12,7 +12,7 @@
                 <li>Des programmes <span class="blue">sur mesure</li>
                 <li>Des résultats <span class="blue">immédiats</li>
                 <li>Des consultants formateurs <span class="blue">experts</li>
-                <li>Nous sommes certifiés <span class="blue">QUALIOPI</li>
+                {{-- <li>Nous sommes certifiés <span class="blue">QUALIOPI</li> --}}
             </ul>
         </div>
     </div>
